@@ -1,24 +1,48 @@
+:root {
+  --text-color: #ffffff;
+  --background-body: #252525;
+  --pokedex-color: #464646;
+  --pokedex-title: #000;
+  --border-title-color: #252525;
+  --pokedex-card-number: #ffffff;
+  --pokedex-card-name: #ffffff;
+  --pokedex-text-type-color: #ffffff;
+  --shadow-card: rgba(0, 0, 0, 0.664);
+  --background-cards: #363636;
+  --button-pagination-color: #656b9c;
+}
+
 * {
-    font-family: 'Roboto', sans-serif;
-    box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: #f6f8fc;
+  background-color: var(--background-body);
+  background-image: linear-gradient(#00000093), url(../img/pokeball.png);
+  background-position: center;
 }
 
 .content {
-    width: 100vw;
-    height: 100vh;
-    padding: 1rem;
-    background-color: #fff;
+  width: 100vw;
+  height: 100vh;
+  padding: 1rem;
+  background-color: var(--pokedex-color);
+  box-shadow: 0 0 10px var(--shadow-card);
+}
+.content h1 {
+  font-family: "Orbitron", sans-serif;
+  text-align: center;
+  font-size: 3rem;
+  border-bottom: 4px solid var(--border-title-color);
+  color: var(--pokedex-title);
 }
 
 @media screen and (min-width: 992px) {
-    .content {
-        max-width: 992px;
-        height: auto;
-        margin: 1rem auto;
-        border-radius: 1rem;
-    }
+  .content {
+    max-width: 992px;
+    height: auto;
+    margin: 1rem auto;
+    border-radius: 1rem;
+  }
 }
