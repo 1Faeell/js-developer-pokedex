@@ -16,26 +16,37 @@
   background: #fff;
   margin: auto;
   padding: 20px;
-  border-radius: 12px;
+  border-radius: 12px 12px 0 0;
   width: 90%;
   max-width: 500px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-  transition: background 0.3s ease;
+  transition: all 0.3s ease;
   position: relative;
+  animation: mostrar-modal ease 1s;
+}
+@keyframes mostrar-modal {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .close-btn {
-  color: #aaa;
+  color: #000000;
   position: absolute;
   top: 10px;
   right: 15px;
-  font-size: 28px;
+  font-size: 32px;
   font-weight: bold;
   cursor: pointer;
 }
 
 .close-btn:hover {
-  color: black;
+  color: rgb(75, 75, 75);
 }
 
 #modalBody img {
@@ -57,65 +68,65 @@
 
 /* Fundo do modal com cores por tipo */
 .modal-content.fire {
-  background: linear-gradient(135deg, #f08030 40%, #fff);
+  background: linear-gradient(135deg, #f08030 20%, #fff);
 }
 
 .modal-content.water {
-  background: linear-gradient(135deg, #6890f0 40%, #fff);
+  background: linear-gradient(135deg, #6890f0 20%, #fff);
 }
 
 .modal-content.grass {
-  background: linear-gradient(135deg, #78c850 40%, #fff);
+  background: linear-gradient(135deg, #78c850 20%, #fff);
 }
 
 .modal-content.electric {
-  background: linear-gradient(135deg, #f8d030 40%, #fff);
+  background: linear-gradient(135deg, #f8d030 20%, #fff);
 }
 
 .modal-content.psychic {
-  background: linear-gradient(135deg, #f85888 40%, #fff);
+  background: linear-gradient(135deg, #f85888 20%, #fff);
 }
 
 .modal-content.ice {
-  background: linear-gradient(135deg, #98d8d8 40%, #fff);
+  background: linear-gradient(135deg, #98d8d8 20%, #fff);
 }
 
 .modal-content.dragon {
-  background: linear-gradient(135deg, #7038f8 40%, #fff);
+  background: linear-gradient(135deg, #7038f8 20%, #fff);
 }
 
 .modal-content.dark {
-  background: linear-gradient(135deg, #705848 40%, #fff);
+  background: linear-gradient(135deg, #705848 20%, #fff);
 }
 
 .modal-content.fairy {
-  background: linear-gradient(135deg, #ee99ac 40%, #fff);
+  background: linear-gradient(135deg, #ee99ac 20%, #fff);
 }
 
 .modal-content.fighting {
-  background: linear-gradient(135deg, #c03028 40%, #fff);
+  background: linear-gradient(135deg, #c03028 20%, #fff);
 }
 
 .modal-content.steel {
-  background: linear-gradient(135deg, #b8b8d0 40%, #fff);
+  background: linear-gradient(135deg, #b8b8d0 20%, #fff);
 }
 
 .modal-content.ground {
-  background: linear-gradient(135deg, #e0c068 40%, #fff);
+  background: linear-gradient(135deg, #e0c068 20%, #fff);
 }
 
 .modal-content.rock {
-  background: linear-gradient(135deg, #b8a038 40%, #fff);
+  background: linear-gradient(135deg, #b8a038 20%, #fff);
 }
 
 .modal-content.bug {
-  background: linear-gradient(135deg, #a8b820 40%, #fff);
+  background: linear-gradient(135deg, #a8b820 20%, #fff);
 }
 
 .modal-content.ghost {
-  background: linear-gradient(135deg, #705898 40%, #fff);
+  background: linear-gradient(135deg, #705898 20%, #fff);
 }
 
 .modal-content.poison {
-  background: linear-gradient(135deg, #a040a0 40%, #fff);
+  background: linear-gradient(135deg, #a040a0 20%, #fff);
 }

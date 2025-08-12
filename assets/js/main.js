@@ -96,7 +96,7 @@ function openModal(pokemonData) {
 
         <h3>Status Base:</h3>
         <ul>
-          ${formatStats(pokemonData.stats)}
+          progress>${formatStats(pokemonData.stats)}
         </ul>
 
         <p><strong>Lendário:</strong> ${isLegendary}</p>
